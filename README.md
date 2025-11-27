@@ -3,6 +3,7 @@
 
 ### How I Put It Together
 - I kept the Flask app focused on a single job: accept grants, call Groq’s LLaMA 3.1 model, and persist the tagged payloads in MongoDB.
+- Tech Stack: React, Tailwind, Flask, Mongodb
 - I stored the curated tag list in Python as required in the assessment instructions.
 - I exposed clean endpoints (`/api/grants`, `/api/tags`, `/api/health`) and leaned on `flask-cors` so the React client can talk to the API without ceremony.
 - I built the UI around two tabs— Add and Browse —so I can quickly seed data, then filter grants by the tags the model returns.
